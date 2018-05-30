@@ -38,7 +38,7 @@ class Admin extends CI_Controller
 		$this->data['title'] = "Tambah Hotel";
 
 		$this->form_validation->set_rules('name', 'Nama', 'trim|required');
-		// $this->form_validation->set_rules('price', 'Harga', 'trim|required');
+		// $this->form_validation->set_rules('price', 'Harga', 'trim');
 		$this->form_validation->set_rules('latitude', 'Latitude', 'trim|required');
 		$this->form_validation->set_rules('longitude', 'Longitude', 'trim|required');
 		$this->form_validation->set_rules('description', 'Deskripsi', 'trim|required');
@@ -111,7 +111,7 @@ class Admin extends CI_Controller
 		$this->data['title'] = "Update Hotel";
 
 		$this->form_validation->set_rules('name', 'Nama', 'trim|required');
-		// $this->form_validation->set_rules('price', 'Harga', 'trim|required');
+		// $this->form_validation->set_rules('price', 'Harga', 'trim');
 		$this->form_validation->set_rules('latitude', 'Latitude', 'trim|required');
 		$this->form_validation->set_rules('longitude', 'Longitude', 'trim|required');
 		$this->form_validation->set_rules('description', 'Deskripsi', 'trim|required');

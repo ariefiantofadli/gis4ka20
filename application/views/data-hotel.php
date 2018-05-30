@@ -19,7 +19,7 @@ $this->load->view('headerAdmin', $this->data);
   		<tr>
   			<th>No.</th>
   			<th class="text-center">Nama</th>
-  			<th class="text-center">Harga</th>
+  			<!-- <th class="text-center">Harga</th> -->
   			<th class="text-center">Latitude</th>
   			<th class="text-center">Longitude</th>
   			<th class="text-center">Alamat</th>
@@ -38,7 +38,7 @@ $this->load->view('headerAdmin', $this->data);
 					<a href="#" data-id="<?php echo $row->ID ?>" class="text-danger delete-hotel">Hapus</a>
 				</div>	
 			</td>
-  			<td><?php echo number_format($row->price) ?></td>
+  			<!-- <td><?php echo number_format($row->price) ?></td> -->
   			<td><?php echo $row->latitude ?></td>
   			<td><?php echo $row->longitude ?></td>
   			<td width="200"><small><?php echo word_limiter($row->address, 15) ?></small></td>
